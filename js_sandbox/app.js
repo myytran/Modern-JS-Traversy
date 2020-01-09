@@ -27,3 +27,10 @@ console.log(123);
 console.log(123);
 console.log(123);
 console.timeEnd('hello');
+
+// Variables and Declarations
+
+//  var, let, const
+
+var name = 'John Doe';
+console.log(name);
