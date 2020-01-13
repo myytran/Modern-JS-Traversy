@@ -28,7 +28,9 @@
 // console.log(123);
 // console.timeEnd('hello');
 
-// // Variables and Declarations
+//////////////////////////////////////////////////
+
+// VARIABLES AND DECLARATIONS
 
 // //  var, let, const
 
@@ -51,6 +53,8 @@
 
 // CONST [can't change or be reassigned]
 // have to assign a value
+
+/////////////////////////////////////////////////
 
 //PRIMITIVE TYPES
 
@@ -85,6 +89,8 @@
 
 // console.log(today);
 // console.log(typeof today);
+
+////////////////////////////////////////////
 
 // TYPE CONVERSION
 
@@ -129,30 +135,95 @@
 // console.log(sum);
 // console.log(typeof sum);
 
+///////////////////////////////////////////////////
+
 // NUMBERS AND THE MATH OBJECT
 
-const num1 = 140;
-const num2 = 40;
+// const num1 = 140;
+// const num2 = 40;
+// let val;
+
+// //Simple math with numbers
+// val = num1 + num2;
+// val = num1 * num2;
+// val = num1 - num2;
+// val = num1 / num2;
+// val = num1 % num2;
+
+// //  Math object
+// val = Math.PI;
+// val = Math.E;
+// val = Math.round(4.5); //5
+// val = Math.ceil(2.4); //3
+// val = Math.floor(2.6); //2
+// val = Math.sqrt(9); //3
+// val = Math.abs(-4); //4
+// val = Math.pow(8, 2); //64
+// val = Math.min(2, 44, 5, 3);
+// val = Math.max(45, 33, 2);
+// val = Math.floor(Math.random() * 20);
+
+// console.log(val);
+
+// STRING METHODS AND CONCATENATION
+
+const firstName = 'William';
+const lastName = 'Johnson';
+const age = 30;
+const str = 'hello there my name is My';
+
 let val;
 
-//Simple math with numbers
-val = num1 + num2;
-val = num1 * num2;
-val = num1 - num2;
-val = num1 / num2;
-val = num1 % num2;
+val = firstName + lastName;
 
-//  Math object
-val = Math.PI;
-val = Math.E;
-val = Math.round(4.5); //5
-val = Math.ceil(2.4); //3
-val = Math.floor(2.6); //2
-val = Math.sqrt(9); //3
-val = Math.abs(-4); //4
-val = Math.pow(8, 2); //64
-val = Math.min(2, 44, 5, 3);
-val = Math.max(45, 33, 2);
-val = Math.floor(Math.random() * 20);
+//concatenation
+val = firstName + ' ' + lastName;
+
+// Append
+val = 'My ';
+val += 'Tran'; // My Tran
+
+val = 'Hello, my name is ' + firstName + ' and I am ' + age;
+
+// Escaping
+val = "That's awesome, I can't wait"; // double quotes or \ before single quote
+
+// Length
+val = firstName.length;
+
+// concat method
+val = firstName.concat(' ', lastName); // William Johnson
+
+//Change case
+val = firstName.toUpperCase(); //WILLIAM
+val = firstName.toLowerCase(); // william
+
+val = firstName[3]; //l
+val = firstName[0]; //W
+
+// indexOf()
+val = firstName.indexOf('i'); //1
+val = firstName.lastIndexOf('a'); //5
+
+// charAt()
+val = firstName.charAt('2'); //l
+// get last character
+val = firstName.charAt(firstName.length - 1); //common formula
+
+// Substring()
+val = firstName.substring(0, 4); //Will
+
+// Slice
+val = firstName.slice(0, 4); //Will
+val = firstName.slice(-3); //iam
+
+//Split()
+val = str.split(' '); // splits array by space
+
+//replace
+val = str.replace('My', 'Jack'); // hello there my name is Jack
+
+// includes()
+val = str.includes('help'); //false
 
 console.log(val);
