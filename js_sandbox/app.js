@@ -88,33 +88,33 @@
 
 // TYPE CONVERSION
 
-let val;
-//number to string
-val = String(555);
-val = String(4 + 4);
+// let val;
+// //number to string
+// val = String(555);
+// val = String(4 + 4);
 
-//boolean to string
-val = String(true);
+// //boolean to string
+// val = String(true);
 
-//Date to string
-val = String(new Date());
+// //Date to string
+// val = String(new Date());
 
-// Array to string
-val = String([1, 2, 3, 4]);
+// // Array to string
+// val = String([1, 2, 3, 4]);
 
-// toString() method
+// // toString() method
 
-val = (5607987).toString();
-val = true.toString();
+// val = (5607987).toString();
+// val = true.toString();
 
-//String to number
-val = Number('6');
-val = Number(true); //1
-val = Number(false); //0
-val = Number(null); //0
+// //String to number
+// val = Number('6');
+// val = Number(true); //1
+// val = Number(false); //0
+// val = Number(null); //0
 
-val = parseInt('299.4'); //299
-val = parseFloat('299.4'); //299.4
+// val = parseInt('299.4'); //299
+// val = parseFloat('299.4'); //299.4
 
 // // output
 // console.log(val);
@@ -122,9 +122,37 @@ val = parseFloat('299.4'); //299.4
 // //console.log(val.length);
 // console.log(val.toFixed());
 
-const val1 = String('8');
-const val2 = 9;
-const sum = val1 + val2;
+// const val1 = String('8');
+// const val2 = 9;
+// const sum = val1 + val2;
 
-console.log(sum);
-console.log(typeof sum);
+// console.log(sum);
+// console.log(typeof sum);
+
+// NUMBERS AND THE MATH OBJECT
+
+const num1 = 140;
+const num2 = 40;
+let val;
+
+//Simple math with numbers
+val = num1 + num2;
+val = num1 * num2;
+val = num1 - num2;
+val = num1 / num2;
+val = num1 % num2;
+
+//  Math object
+val = Math.PI;
+val = Math.E;
+val = Math.round(4.5); //5
+val = Math.ceil(2.4); //3
+val = Math.floor(2.6); //2
+val = Math.sqrt(9); //3
+val = Math.abs(-4); //4
+val = Math.pow(8, 2); //64
+val = Math.min(2, 44, 5, 3);
+val = Math.max(45, 33, 2);
+val = Math.floor(Math.random() * 20);
+
+console.log(val);
