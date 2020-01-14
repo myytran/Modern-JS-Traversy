@@ -167,63 +167,103 @@
 
 // STRING METHODS AND CONCATENATION
 
-const firstName = 'William';
-const lastName = 'Johnson';
-const age = 30;
-const str = 'hello there my name is My';
+// const firstName = 'William';
+// const lastName = 'Johnson';
+// const age = 30;
+// const str = 'hello there my name is My';
 
-let val;
+// let val;
 
-val = firstName + lastName;
+// val = firstName + lastName;
 
-//concatenation
-val = firstName + ' ' + lastName;
+// //concatenation
+// val = firstName + ' ' + lastName;
 
-// Append
-val = 'My ';
-val += 'Tran'; // My Tran
+// // Append
+// val = 'My ';
+// val += 'Tran'; // My Tran
 
-val = 'Hello, my name is ' + firstName + ' and I am ' + age;
+// val = 'Hello, my name is ' + firstName + ' and I am ' + age;
 
-// Escaping
-val = "That's awesome, I can't wait"; // double quotes or \ before single quote
+// // Escaping
+// val = "That's awesome, I can't wait"; // double quotes or \ before single quote
 
-// Length
-val = firstName.length;
+// // Length
+// val = firstName.length;
 
-// concat method
-val = firstName.concat(' ', lastName); // William Johnson
+// // concat method
+// val = firstName.concat(' ', lastName); // William Johnson
 
-//Change case
-val = firstName.toUpperCase(); //WILLIAM
-val = firstName.toLowerCase(); // william
+// //Change case
+// val = firstName.toUpperCase(); //WILLIAM
+// val = firstName.toLowerCase(); // william
 
-val = firstName[3]; //l
-val = firstName[0]; //W
+// val = firstName[3]; //l
+// val = firstName[0]; //W
 
-// indexOf()
-val = firstName.indexOf('i'); //1
-val = firstName.lastIndexOf('a'); //5
+// // indexOf()
+// val = firstName.indexOf('i'); //1
+// val = firstName.lastIndexOf('a'); //5
 
-// charAt()
-val = firstName.charAt('2'); //l
-// get last character
-val = firstName.charAt(firstName.length - 1); //common formula
+// // charAt()
+// val = firstName.charAt('2'); //l
+// // get last character
+// val = firstName.charAt(firstName.length - 1); //common formula
 
-// Substring()
-val = firstName.substring(0, 4); //Will
+// // Substring()
+// val = firstName.substring(0, 4); //Will
 
-// Slice
-val = firstName.slice(0, 4); //Will
-val = firstName.slice(-3); //iam
+// // Slice
+// val = firstName.slice(0, 4); //Will
+// val = firstName.slice(-3); //iam
 
-//Split()
-val = str.split(' '); // splits array by space
+// //Split()
+// val = str.split(' '); // splits array by space
 
-//replace
-val = str.replace('My', 'Jack'); // hello there my name is Jack
+// //replace
+// val = str.replace('My', 'Jack'); // hello there my name is Jack
 
-// includes()
-val = str.includes('help'); //false
+// // includes()
+// val = str.includes('help'); //false
 
-console.log(val);
+// console.log(val);
+
+// TEMPLATE LITERALS
+
+const name = 'My';
+const age = 36;
+const job = 'Web developer';
+const city = 'Washington';
+let html;
+
+//Without template strings (es5)
+html =
+  '<ul><li>Name: ' +
+  name +
+  '</li><li>Age: ' +
+  age +
+  '</li><li>Job: ' +
+  job +
+  '</li><li>City: ' +
+  city +
+  '</li></ul>';
+
+function hello() {
+  return 'hello';
+}
+
+// Template Strings//Template Literals
+html = `
+  <ul>
+        <li>Name: ${name}</li>
+        <li>Age: ${age}</li>
+        <li>Job: ${job}</li>
+        <li>City: ${city}</li>
+        <li>${2 + 2}</li>
+        <li>${hello()}</li>
+        <li>${age > 30 ? 'Over 30' : 'Under 30'}</li>
+  </ul>
+  
+  `;
+
+document.body.innerHTML = html;
