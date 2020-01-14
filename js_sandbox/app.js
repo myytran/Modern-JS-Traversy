@@ -230,40 +230,102 @@
 
 // TEMPLATE LITERALS
 
-const name = 'My';
-const age = 36;
-const job = 'Web developer';
-const city = 'Washington';
-let html;
+// const name = 'My';
+// const age = 36;
+// const job = 'Web developer';
+// const city = 'Washington';
+// let html;
 
-//Without template strings (es5)
-html =
-  '<ul><li>Name: ' +
-  name +
-  '</li><li>Age: ' +
-  age +
-  '</li><li>Job: ' +
-  job +
-  '</li><li>City: ' +
-  city +
-  '</li></ul>';
+// //Without template strings (es5)
+// html =
+//   '<ul><li>Name: ' +
+//   name +
+//   '</li><li>Age: ' +
+//   age +
+//   '</li><li>Job: ' +
+//   job +
+//   '</li><li>City: ' +
+//   city +
+//   '</li></ul>';
 
-function hello() {
-  return 'hello';
+// function hello() {
+//   return 'hello';
+// }
+
+// // Template Strings//Template Literals
+// html = `
+//   <ul>
+//         <li>Name: ${name}</li>
+//         <li>Age: ${age}</li>
+//         <li>Job: ${job}</li>
+//         <li>City: ${city}</li>
+//         <li>${2 + 2}</li>
+//         <li>${hello()}</li>
+//         <li>${age > 30 ? 'Over 30' : 'Under 30'}</li>
+//   </ul>
+
+//   `;
+
+// document.body.innerHTML = html;
+
+////////////////////////////////////////////////////////
+
+//ARRAYS AND ARRAY METHODS
+
+//creating some arrays
+const numbers = [37, 78, 92, 4];
+const numbers2 = new Array(34, 32, 77, 23);
+const fruit = ['Apple', 'Banana', 'Orange', 'Pear'];
+const mixed = [22, 'Hello', true, undefined, null, { a: 1, b: 3 }, new Date()];
+
+// let val;
+
+// // get array length
+// val = numbers.length;
+// //check if is array
+// val = Array.isArray(numbers); //true
+// //get single value
+// val = numbers[3]; //4
+// //Insert into array
+// numbers[2] = 100;
+// //find index of value
+// val = numbers.indexOf(78); //1
+
+// // Mutating arrays
+// // add on to end
+// numbers.push(67); //[37, 78, 92, 4, 67]
+// // add on to front
+// numbers.unshift(90); //[90, 37, 78, 92, 4, 67]
+// //take off from end
+// numbers.pop(); //[90, 37, 78, 92, 4]
+// //take off from front
+// numbers.shift(); // [37, 78, 92, 4]
+// //splice values
+// numbers.splice(1, 2);
+// //reverse array
+// numbers.reverse(); //[4, 37]
+// //concatenate array
+// val = numbers.concat(numbers2);
+// //sort
+// val = fruit.sort();
+// val = numbers.sort();
+
+// //use the compare functions
+// val = numbers.sort(function(x, y) {
+//   return x - y;
+// });
+
+// // Reverse sort
+// val = numbers.sort(function(x, y) {
+//   return y - x;
+// });
+
+//find
+function under50(num) {
+  return num < 50;
 }
 
-// Template Strings//Template Literals
-html = `
-  <ul>
-        <li>Name: ${name}</li>
-        <li>Age: ${age}</li>
-        <li>Job: ${job}</li>
-        <li>City: ${city}</li>
-        <li>${2 + 2}</li>
-        <li>${hello()}</li>
-        <li>${age > 30 ? 'Over 30' : 'Under 30'}</li>
-  </ul>
-  
-  `;
+val = numbers.find(under50);
 
-document.body.innerHTML = html;
+console.log(numbers);
+console.log(val);
