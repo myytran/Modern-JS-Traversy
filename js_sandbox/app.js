@@ -321,11 +321,41 @@ const mixed = [22, 'Hello', true, undefined, null, { a: 1, b: 3 }, new Date()];
 // });
 
 //find
-function under50(num) {
-  return num < 50;
-}
+// function under50(num) {
+//   return num < 50;
+// }
 
-val = numbers.find(under50);
+// val = numbers.find(under50);
 
-console.log(numbers);
+// console.log(numbers);
+// console.log(val);
+
+/////////////////////////////////////////////////////
+
+// OBJECT LITERALS
+
+const person = {
+  firstName: 'My',
+  lastName: 'Tran',
+  age: 30,
+  email: 'mytran@aol.com'
+};
+
+let val;
+val = person;
+
+//get specific value
+val = person.email; // My
+
 console.log(val);
+
+// objects
+const people = [
+  { name: 'Jon', age: 29 },
+  { name: 'Rory', age: 36 },
+  { name: 'My', age: 29 }
+];
+
+for (let i = 0; i < people.length; i++) {
+  console.log(people[i].name);
+}
