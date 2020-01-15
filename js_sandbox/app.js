@@ -499,3 +499,45 @@ const mixed = [22, 'Hello', true, undefined, null, { a: 1, b: 3 }, new Date()];
 // }
 
 // console.log(`Today is ${day}`);
+
+////////////////////////////////////////////////////////
+
+// FUNCTION DECLARATIONS
+
+function greet(firstName = 'Rory', lastName = 'Staunton') {
+  return 'hi ' + firstName + ' ' + lastName;
+}
+
+//console.log(greet('Rory', 'Staunton'));
+
+//FUNCTION EXPRESSION
+
+const square = function(x) {
+  return x * x;
+};
+
+// console.log(square(8));
+
+//IMMIDIATELY INVOKABLE FUNCTION EXPRESSIONS - IIFEs; a function that you declare and run at the same time.
+
+// (function(name) {
+//   console.log('hello ' + name);
+// })('brad');
+
+//PROPERTY METHODS
+
+const todo = {
+  add: function() {
+    console.log('adding');
+  },
+  subtract: function() {
+    console.log('subtracting');
+  },
+  multiply: function() {
+    console.log('multiplying');
+  }
+};
+
+todo.add(23);
+todo.subtract(6);
+todo.multiply(8);
