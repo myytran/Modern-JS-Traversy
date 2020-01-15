@@ -372,7 +372,7 @@ const mixed = [22, 'Hello', true, undefined, null, { a: 1, b: 3 }, new Date()];
 //////////////////////////////////////////////////////////
 // IF STATEMENTS & COMPARISION OPERATORS
 
-const id = 100;
+// const id = 100;
 
 // //equal to
 // if (id == 100) {
@@ -430,23 +430,72 @@ const id = 100;
 // }
 
 // LOGICAL OPERATORS
-const name = 'Steve';
-const age = 20;
+// const name = 'Steve';
+// const age = 20;
 
-if (age > 0 && age < 12) {
-  console.log(`${name} is a child`);
-} else if (age >= 13 && age <= 19) {
-  console.log(`${name} is a teenager`);
-} else {
-  console.log(`${name} is a adult`);
-}
+// if (age > 0 && age < 12) {
+//   console.log(`${name} is a child`);
+// } else if (age >= 13 && age <= 19) {
+//   console.log(`${name} is a teenager`);
+// } else {
+//   console.log(`${name} is a adult`);
+// }
 
-// OR
-if (age < 16 || age > 65) {
-  console.log(`${name} cannot run in a race`);
-} else {
-  console.log(`${name} is not registered for the race`);
-}
+// // OR
+// if (age < 16 || age > 65) {
+//   console.log(`${name} cannot run in a race`);
+// } else {
+//   console.log(`${name} is not registered for the race`);
+// }
 
-// TERNARY OPERATOR
-console.log(id === 100 ? 'Correct' : 'Incorrect');
+// // TERNARY OPERATOR
+// console.log(id === 100 ? 'Correct' : 'Incorrect'); //incorrect
+
+// // WITHOUT BRACES
+// if (id === 100) console.log('correct');
+// else console.log('Incorrect');
+
+//////////////////////////////////////////////
+
+// SWITCHES - validates conditions; use Switch when working with a project with lots of conditionals, it keeps it cleaner.
+// const color = 'purple';
+
+// switch (color) {
+//   case 'red':
+//     console.log('color is red');
+//     break;
+//   case 'blue':
+//     console.log('color is blue');
+//     break;
+//   default:
+//     console.log('color is not red or blue');
+//     break;
+// }
+
+// let day;
+
+// switch (new Date().getDay()) {
+//   case 0:
+//     day = 'Sunday';
+//     break;
+//   case 1:
+//     day = 'Monday';
+//     break;
+//   case 2:
+//     day = 'Tuesday';
+//     break;
+//   case 3:
+//     day = 'Wednesday';
+//     break;
+//   case 4:
+//     day = 'Thursday';
+//     break;
+//   case 5:
+//     day = 'Friday';
+//     break;
+//   case 6:
+//     day = 'Saturday';
+//     break;
+// }
+
+// console.log(`Today is ${day}`);
